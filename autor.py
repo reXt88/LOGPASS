@@ -1,7 +1,6 @@
 #!/bin/python3
 import os
 import os.path
-
 log = input("Enter login for registration ")
 passw = input("Enter password for registration ")
 print("Registration complete")
