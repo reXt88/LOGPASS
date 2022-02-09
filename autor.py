@@ -1,5 +1,5 @@
 #!/bin/python3
-
+import os
 c=1
 k=3
 print("Autorization")
@@ -26,6 +26,14 @@ while c<=3:
 		k-=1
 		if c>3:
 			print("Exceeded the number of input attempts")
+			s = ''
+			while s != "yes" or s != "no":
+				s = input("Do you want to create account?(yes/no) ")
+				if s == "no":
+					break
+				if s == "yes":
+					print("")
+					os.system("./regist.py")
 		else:
 			print("Try again")
 
