@@ -2,6 +2,7 @@
 import os
 import os.path
 
+print("-------------------------------------------")
 c=0
 while c!=1:
 	log = input("Enter login for registration ")
@@ -13,6 +14,7 @@ while c!=1:
 	if log not in q:
 		passw = input("Enter password for registration ")
 		print("Registration complete")
+		print("-------------------------------------------\n\n\n\n\n")
 		passwords = open("filepasswords.txt", "a")
 		passwords.write(f"{log}:{passw}\n")
 		passwords.close()
@@ -21,7 +23,6 @@ while c!=1:
 #В противном случае прдоставляется выбор на вход в существующий аккаунт или повторная регистрация
 	else:
 		print("Username already exists")
-		print("")
 		b=""
 		while b!="yes" or b!="no":
 			b=input("Do you want registration again?(yes/no)")
@@ -29,5 +30,6 @@ while c!=1:
 				break
 			if b=="no":
 				c=1
+				print("-------------------------------------------")
 				break
 		

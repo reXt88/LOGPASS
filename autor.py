@@ -2,6 +2,7 @@
 import os
 c=1
 k=3
+print("-------------------------------------------")
 print("Autorization")
 #Цикл проверки логина и пароля
 while c<=3:
@@ -14,10 +15,10 @@ while c<=3:
 #Непосредственно сама проверка и вывод сопутсвующих сообщений
 	if login+":"+password in b:
 		print("Access sucsessfuly")
+		print("-------------------------------------------")
 		break
 	else:
-		print("Invalid login or password")
-		print("")
+		print("Invalid login or password\n\n\n\n\n")
 		c+=1
 		k-=1
 		if c>3:
