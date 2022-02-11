@@ -7,16 +7,12 @@ print("Autorization")
 while c<=3:
 	login=input("Login ")
 	password=(input("Password "))
-#Открытие файла с логинами для проверки
-	log = open("filelogins.txt" , "r")
-	a = log.read()
-	log.close()
-#Открытие файла с паролями для проверки
+#Открытие файла с логинами и паролями для проверки
 	passw = open("filepasswords.txt", "r")
 	b = passw.read()
 	passw.close()
 #Непосредственно сама проверка и вывод сопутсвующих сообщений
-	if login in a and password in b:
+	if login+":"+password in b:
 		print("Access sucsessfuly")
 		break
 	else:
