@@ -26,9 +26,9 @@ while c!=1:
 		b=""
 		while b!="yes" or b!="no":
 			b=input("Do you want registration again?(yes/no)")
-			if b=="yes":
+			if b=="yes" or b=="y":
 				break
-			if b=="no":
+			if b=="no" or b=="n":
 				c=1
 				print("-------------------------------------------")
 				break
