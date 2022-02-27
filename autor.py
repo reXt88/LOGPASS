@@ -5,6 +5,7 @@ import os
 c=1
 k=3
 print("-------------------------------------------")
+print("Autorizing")
 #Цикл проверки логина и пароля
 while c<=3:
     login=input("Login ")
@@ -30,6 +31,7 @@ while c<=3:
                 if s == "no":
                     break
                 if s == "yes":
-                    print("")os.system("./regist.py")
+                    print("")
+                    os.system("./regist.py")
         else:
             print("Try again")
