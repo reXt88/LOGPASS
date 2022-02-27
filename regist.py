@@ -9,13 +9,14 @@ while c!=1:
     log = input("Enter login for registration ")
     #Открытие файла для проверки уже существующих логинов
     a = open("filepasswords.txt", "r")
+    q = a.read()
     a.close()
     #Если лоигна нет в файле - продолжается регистраия
     if log not in q:
         passw = input("Enter password for registration ")
         print("Registration complete")
         print("-------------------------------------------")
-        passwords = open("filepasswords", "a")
+        passwords = open("filepasswords.txt", "a")
         passwords.write(f"{log}:{passw}\n")
         passwords.close()
         os.system("./autor.py")
